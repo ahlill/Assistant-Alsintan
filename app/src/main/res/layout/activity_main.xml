@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout style="@style/styleLinearParent">
+
+        <TextView
+            style="@style/styleTitle"
+            android:text="Luas Lahan (Ha)" />
+
+        <EditText
+            android:id="@+id/et_area"
+            android:inputType="numberDecimal"
+            style="@style/styleEditTextContent" />
+
+        <TextView
+            style="@style/styleTitle"
+            android:text="Masa Olah Lahan (Jam/Periode)" />
+
+        <EditText
+            android:id="@+id/et_masa_olah_lahan"
+            android:inputType="numberDecimal"
+            style="@style/styleEditTextContent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_current_tractor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout style="@style/styleLinearParent">
+
+                <TextView
+                    style="@style/styleTitle"
+                    android:text="Traktor Yang Tersedia" />
+
+                <TextView
+                    android:id="@+id/tv_description_current_tractor"
+                    style="@style/styleTextInformation"
+                    android:text="Hapus jika tidak ada" />
+
+                <LinearLayout
+                    android:id="@+id/ll_current_tractor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_min_current_tractor"
+                        style="@style/styleButtonAppendixMinus" />
+
+                    <Button
+                        android:id="@+id/btn_add_current_tractor"
+                        style="@style/styleButtonAppendixPlus" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_optional_tractor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout style="@style/styleLinearParent">
+
+                <TextView
+                    style="@style/styleTitle"
+                    android:text="Traktor Yang Ingin Dibeli" />
+
+                <TextView
+                    android:id="@+id/tv_description_optional_tractor"
+                    style="@style/styleTextInformation"
+                    android:text="Hapus jika tidak ada" />
+
+                <LinearLayout
+                    android:id="@+id/ll_optional_tractor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_min_optional_tractor"
+                        style="@style/styleButtonAppendixMinus" />
+
+                    <Button
+                        android:id="@+id/btn_add_optional_tractor"
+                        style="@style/styleButtonAppendixPlus" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_run"
+            style="@style/styleButton" />
+
+        <TextView
+            android:id="@+id/tv_description_result"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Description"
+            style="@style/styleSubtitle"/>
+    </LinearLayout>
+</ScrollView>

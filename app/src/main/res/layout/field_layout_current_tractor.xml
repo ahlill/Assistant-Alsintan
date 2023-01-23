@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/styleEditTextContent"
+            android:layout_weight="1"
+            android:hint="Nama Traktor" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/et_unit"
+            android:inputType="numberDecimal"
+            style="@style/styleEditTextContent"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:hint="Jumlah Unit" />
+
+        <EditText
+            android:id="@+id/et_capacity"
+            style="@style/styleEditTextContent"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:hint="Kapasitas Kerja (Ha/Jam)" />
+    </TableRow>
+
+</TableLayout>
